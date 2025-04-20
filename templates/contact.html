@@ -1,0 +1,226 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact Us - CyberGuard{% endblock %}
+
+{% block content %}
+<!-- Header Section -->
+<section class="py-5 bg-body-tertiary">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h1 class="mb-4">Contact Us</h1>
+                <p class="lead">Have questions about cybersecurity or need assistance? Get in touch with our team.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Form Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mb-5 mb-lg-0">
+                <div class="card">
+                    <div class="card-body p-4">
+                        <h2 class="mb-4">Send Us a Message</h2>
+                        <form id="contactForm" method="post" action="{{ url_for('contact') }}" class="needs-validation" novalidate>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                                <div class="invalid-feedback">
+                                    Please enter your name.
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address.
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <select class="form-select" id="subject" name="subject">
+                                    <option value="general">General Inquiry</option>
+                                    <option value="support">Technical Support</option>
+                                    <option value="training">Training & Education</option>
+                                    <option value="feedback">Website Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Your Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                                <div class="invalid-feedback">
+                                    Please enter your message.
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="privacy" required>
+                                <label class="form-check-label" for="privacy">I agree to the <a href="#">privacy policy</a> and consent to having my data processed</label>
+                                <div class="invalid-feedback">
+                                    You must agree before submitting.
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-info">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="h5 mb-4">Contact Information</h3>
+                        <div class="d-flex mb-3">
+                            <i class="fas fa-envelope text-info me-3 mt-1"></i>
+                            <div>
+                                <h4 class="h6 mb-1">Email</h4>
+                                <p class="mb-0">info@cyberguard.example</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i class="fas fa-phone text-info me-3 mt-1"></i>
+                            <div>
+                                <h4 class="h6 mb-1">Phone</h4>
+                                <p class="mb-0">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <i class="fas fa-map-marker-alt text-info me-3 mt-1"></i>
+                            <div>
+                                <h4 class="h6 mb-1">Address</h4>
+                                <p class="mb-0">123 Security Street<br>Cyber City, CS 12345<br>United States</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="h5 mb-3">Follow Us</h3>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="text-info social-icon"><i class="fab fa-twitter fa-2x"></i></a>
+                            <a href="#" class="text-info social-icon"><i class="fab fa-facebook fa-2x"></i></a>
+                            <a href="#" class="text-info social-icon"><i class="fab fa-linkedin fa-2x"></i></a>
+                            <a href="#" class="text-info social-icon"><i class="fab fa-instagram fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="h5 mb-3">Emergency Resources</h3>
+                        <p>If you're experiencing a cybersecurity incident or breach:</p>
+                        <ul class="mb-0">
+                            <li><a href="https://www.cisa.gov/reporting-cyber-incidents" target="_blank" rel="noopener noreferrer">Report to CISA</a></li>
+                            <li><a href="https://www.ic3.gov/" target="_blank" rel="noopener noreferrer">FBI Internet Crime Complaint Center</a></li>
+                            <li><a href="https://www.ftc.gov/faq/consumer-protection/report-identity-theft" target="_blank" rel="noopener noreferrer">Report Identity Theft</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="py-5 bg-body-tertiary">
+    <div class="container">
+        <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What services do you offer?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                CyberGuard provides cybersecurity educational resources, awareness training, and informational content to help individuals and organizations understand and mitigate cyber threats. Our focus is on making cybersecurity knowledge accessible to everyone.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Do you offer consulting services?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                While our website primarily focuses on educational content, we do have partnerships with cybersecurity consulting firms. If you have specific consulting needs, please reach out through our contact form, and we can connect you with appropriate resources.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                How can I report a security vulnerability?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                If you've discovered a security vulnerability on our website, please contact us immediately at security@cyberguard.example. For reporting vulnerabilities in other software or services, we recommend reviewing their security disclosure policies or contacting organizations like the CERT Coordination Center.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Do you offer training for organizations?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, we offer customized cybersecurity awareness training programs for organizations of all sizes. These can be delivered online or in-person depending on your needs. Please contact us through the form above for more information on enterprise training options.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                How quickly will you respond to my inquiry?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                We aim to respond to all inquiries within 1-2 business days. For urgent matters, please indicate this in the subject line of your message, and we'll do our best to prioritize your request.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Form validation
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('contactForm');
+        if (form) {
+            form.addEventListener('submit', function(event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            });
+        }
+    });
+</script>
+{% endblock %}

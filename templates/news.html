@@ -1,0 +1,254 @@
+{% extends 'base.html' %}
+
+{% block title %}Cybersecurity News - CyberGuard{% endblock %}
+
+{% block content %}
+<!-- Header Section -->
+<section class="py-5 bg-body-tertiary">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h1 class="mb-4">Cybersecurity News & Updates</h1>
+                <p class="lead">Stay informed about the latest cybersecurity threats, breaches, and developments.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured News Section -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="mb-4">Featured Story</h2>
+        <div class="card mb-5">
+            <div class="card-body p-4">
+                <div class="row">
+                    <div class="col-lg-8 mb-4 mb-lg-0">
+                        <span class="badge bg-danger mb-2">Critical Alert</span>
+                        <h3 class="mb-3">Major Vulnerability Discovered in Popular Software: What You Need to Know</h3>
+                        <p class="mb-3">Security researchers have uncovered a critical vulnerability affecting multiple versions of widely-used software that could allow attackers to execute remote code on affected systems. The vulnerability, dubbed "LogShell," is being actively exploited in the wild.</p>
+                        <p class="mb-3">The vulnerability affects Java-based logging library Log4j, which is used by countless applications and services across the internet. Because of its widespread use, security experts are warning that this could be one of the most serious vulnerabilities discovered in recent years.</p>
+                        <p>Users and organizations are urged to update to the latest version immediately or implement recommended mitigations if updates are not yet available.</p>
+                        <div class="mt-4">
+                            <small class="text-body-secondary">Published: June 18, 2023</small>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card bg-body-tertiary mb-3">
+                            <div class="card-body">
+                                <h4 class="h6 mb-3">What You Should Do</h4>
+                                <ul class="mb-0">
+                                    <li>Check if your software uses the affected library</li>
+                                    <li>Apply available patches immediately</li>
+                                    <li>Implement recommended workarounds if patches aren't available</li>
+                                    <li>Monitor systems for unusual activity</li>
+                                    <li>Stay tuned for further updates from vendors</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card bg-body-tertiary">
+                            <div class="card-body">
+                                <h4 class="h6 mb-3">Affected Products</h4>
+                                <ul class="mb-0">
+                                    <li>Enterprise software systems</li>
+                                    <li>Cloud services</li>
+                                    <li>Web applications</li>
+                                    <li>IoT devices</li>
+                                    <li>Many open-source projects</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- News Articles -->
+        <h2 class="mb-4">Latest News</h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 cybersec-card">
+                    <div class="card-body">
+                        <span class="badge bg-info mb-2">Ransomware</span>
+                        <h3 class="card-title h5">Critical Infrastructure Increasingly Targeted by Ransomware</h3>
+                        <p class="card-text">Recent reports show a 300% increase in ransomware attacks targeting critical infrastructure sectors like energy and healthcare.</p>
+                        <p class="card-text">Analysts attribute this rise to the emergence of Ransomware-as-a-Service (RaaS) operations, which have lowered the technical barrier for conducting such attacks, and the high likelihood of payment when essential services are disrupted.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <small class="text-body-secondary">June 15, 2023</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 cybersec-card">
+                    <div class="card-body">
+                        <span class="badge bg-info mb-2">Data Privacy</span>
+                        <h3 class="card-title h5">New Data Protection Regulations Coming in 2023</h3>
+                        <p class="card-text">Several countries are implementing stricter data protection laws, giving users more control over their personal information.</p>
+                        <p class="card-text">The new regulations will require companies to implement stronger safeguards for personal data, provide clearer privacy notices, and face substantial penalties for non-compliance. Businesses are advised to review their data handling practices.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <small class="text-body-secondary">June 10, 2023</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 cybersec-card">
+                    <div class="card-body">
+                        <span class="badge bg-info mb-2">Mobile Security</span>
+                        <h3 class="card-title h5">Researchers Discover Vulnerability in Popular Mobile Apps</h3>
+                        <p class="card-text">Security researchers have found a critical vulnerability affecting multiple popular mobile applications. Updates are being rolled out.</p>
+                        <p class="card-text">The vulnerability could allow attackers to access sensitive user data through a flaw in the authentication process. Users are advised to update affected applications immediately through official app stores.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <small class="text-body-secondary">June 5, 2023</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 cybersec-card">
+                    <div class="card-body">
+                        <span class="badge bg-info mb-2">AI Security</span>
+                        <h3 class="card-title h5">AI-Powered Cyberattacks on the Rise, Report Warns</h3>
+                        <p class="card-text">A new cybersecurity report highlights the growing threat of AI-enhanced cyberattacks targeting businesses and individuals.</p>
+                        <p class="card-text">Attackers are leveraging artificial intelligence to automate reconnaissance, craft more convincing phishing campaigns, and exploit vulnerabilities at scale. The report recommends organizations adopt AI-based defenses to counter these evolving threats.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <small class="text-body-secondary">June 1, 2023</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 cybersec-card">
+                    <div class="card-body">
+                        <span class="badge bg-info mb-2">Cloud Security</span>
+                        <h3 class="card-title h5">Misconfigured Cloud Services Expose Billions of Records</h3>
+                        <p class="card-text">Researchers found over 10,000 unsecured cloud databases containing sensitive information exposed to the public internet.</p>
+                        <p class="card-text">The exposed data includes personal customer information, internal business documents, and credentials that could be used for further attacks. Security experts recommend implementing proper access controls and regular security audits for cloud resources.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <small class="text-body-secondary">May 28, 2023</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 cybersec-card">
+                    <div class="card-body">
+                        <span class="badge bg-info mb-2">Authentication</span>
+                        <h3 class="card-title h5">Major Tech Companies Announce Passwordless Authentication Standard</h3>
+                        <p class="card-text">A coalition of technology giants has announced support for a new passwordless authentication standard to improve security.</p>
+                        <p class="card-text">The FIDO2 standard aims to replace traditional passwords with more secure alternatives like biometrics and hardware security keys. The companies plan to implement the technology across their platforms by the end of the year.</p>
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                            <small class="text-body-secondary">May 22, 2023</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Pagination -->
+        <nav class="mt-5">
+            <ul class="pagination justify-content-center">
+                <li class="page-item active" aria-current="page">
+                    <span class="page-link">1</span>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</section>
+
+<!-- Threat Intelligence Section -->
+<section class="py-5 bg-body-tertiary">
+    <div class="container">
+        <h2 class="mb-4">Current Threat Landscape</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <h3 class="h5 mb-0">Top Threats This Month</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Phishing Campaigns
+                                <span class="badge bg-danger rounded-pill">High</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Ransomware
+                                <span class="badge bg-danger rounded-pill">High</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Supply Chain Attacks
+                                <span class="badge bg-warning rounded-pill">Medium</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                DDoS Attacks
+                                <span class="badge bg-warning rounded-pill">Medium</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                IoT Vulnerabilities
+                                <span class="badge bg-warning rounded-pill">Medium</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <h3 class="h5 mb-0">Active Phishing Campaigns</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-4">
+                            <h4 class="h6">Banking Credential Theft</h4>
+                            <p class="small mb-0">Emails mimicking major banks, claiming account issues that require immediate verification.</p>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="h6">Tax Refund Scams</h4>
+                            <p class="small mb-0">Messages claiming to be from tax authorities offering refunds for overpayment.</p>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="h6">Delivery Notification Scams</h4>
+                            <p class="small mb-0">SMS and emails claiming failed delivery attempts, requiring action through malicious links.</p>
+                        </div>
+                        <div>
+                            <h4 class="h6">Tech Support Scams</h4>
+                            <p class="small mb-0">Pop-ups and calls claiming your device is infected, offering fake technical support.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Subscribe Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="mb-4">Stay Informed</h2>
+                <p class="lead mb-4">Subscribe to our newsletter to receive the latest cybersecurity news and updates directly to your inbox.</p>
+                <form class="row g-3 justify-content-center">
+                    <div class="col-md-8">
+                        <input type="email" class="form-control" placeholder="Your email address" required>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="submit" class="btn btn-info w-100">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

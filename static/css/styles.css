@@ -1,0 +1,149 @@
+/* Custom CSS for Cybersecurity Awareness Website */
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 56px; /* For fixed navbar */
+}
+
+/* Security-themed accents */
+.security-accent {
+    border-left: 3px solid var(--bs-info);
+    padding-left: 15px;
+}
+
+/* Hero section styles */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 100px 0;
+    margin-bottom: 30px;
+}
+
+/* Card hover effects */
+.cybersec-card {
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.cybersec-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Stats counters */
+.counter-item {
+    text-align: center;
+    padding: 20px;
+}
+
+.counter-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--bs-info);
+}
+
+/* Timeline for cyber threats */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: var(--bs-gray-700);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline-content {
+    padding: 20px;
+    position: relative;
+    width: 45%;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-left: 55%;
+}
+
+/* Quiz styles */
+.quiz-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.quiz-question {
+    margin-bottom: 20px;
+}
+
+.quiz-options label {
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.quiz-options label:hover {
+    background-color: var(--bs-gray-700);
+}
+
+.quiz-options input[type="radio"] {
+    margin-right: 10px;
+}
+
+.correct-answer {
+    background-color: rgba(25, 135, 84, 0.3) !important;
+}
+
+.incorrect-answer {
+    background-color: rgba(220, 53, 69, 0.3) !important;
+}
+
+/* Resources page */
+.resource-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.resource-card .card-body {
+    flex: 1 1 auto;
+}
+
+/* Footer */
+footer {
+    background-color: var(--bs-gray-900);
+    color: var(--bs-gray-400);
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 40px;
+    }
+    
+    .timeline-content {
+        width: calc(100% - 80px);
+        margin-left: 80px !important;
+    }
+    
+    .hero-section {
+        padding: 60px 0;
+    }
+}

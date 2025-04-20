@@ -1,0 +1,456 @@
+{% extends 'base.html' %}
+
+{% block title %}Cybersecurity Best Practices - CyberGuard{% endblock %}
+
+{% block content %}
+<!-- Header Section -->
+<section class="py-5 bg-body-tertiary">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h1 class="mb-4">Cybersecurity Best Practices</h1>
+                <p class="lead">Essential guidelines to help you protect your digital identity, data, and devices from cyber threats.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Table of Contents -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 mb-4 mb-lg-0">
+                <div class="card sticky-top" style="top: 80px; z-index: 1;">
+                    <div class="card-header">
+                        <h2 class="h5 mb-0">Quick Navigation</h2>
+                    </div>
+                    <div class="card-body">
+                        <nav class="nav flex-column">
+                            <a class="nav-link" href="#passwords">Password Security</a>
+                            <a class="nav-link" href="#phishing">Phishing Protection</a>
+                            <a class="nav-link" href="#devices">Device Security</a>
+                            <a class="nav-link" href="#browsing">Safe Browsing</a>
+                            <a class="nav-link" href="#social-media">Social Media Safety</a>
+                            <a class="nav-link" href="#ransomware">Ransomware Prevention</a>
+                            <a class="nav-link" href="#identity-theft">Identity Theft Protection</a>
+                            <a class="nav-link" href="#children">Children's Online Safety</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-9">
+                <!-- Password Security -->
+                <section id="passwords" class="mb-5">
+                    <h2 class="mb-4">Password Security</h2>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Essential Password Guidelines</h3>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Use a unique password for each account to prevent credential stuffing attacks</li>
+                                <li class="list-group-item">Create strong passwords with at least 12 characters, including uppercase letters, lowercase letters, numbers, and symbols</li>
+                                <li class="list-group-item">Consider using passphrases that are easier to remember but still secure</li>
+                                <li class="list-group-item">Use a password manager to securely store and generate strong passwords</li>
+                                <li class="list-group-item">Enable two-factor authentication (2FA) whenever possible</li>
+                                <li class="list-group-item">Change passwords immediately if you suspect a breach</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Recommended Password Managers</h3>
+                            <div class="row g-3">
+                                <div class="col-md-4">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-shield-alt text-info me-3 fa-2x"></i>
+                                        <div>
+                                            <h4 class="h6 mb-1">Bitwarden</h4>
+                                            <p class="small mb-0">Open-source and free option</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-shield-alt text-info me-3 fa-2x"></i>
+                                        <div>
+                                            <h4 class="h6 mb-1">LastPass</h4>
+                                            <p class="small mb-0">User-friendly interface</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-shield-alt text-info me-3 fa-2x"></i>
+                                        <div>
+                                            <h4 class="h6 mb-1">1Password</h4>
+                                            <p class="small mb-0">Strong security features</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Phishing Protection -->
+                <section id="phishing" class="mb-5">
+                    <h2 class="mb-4">Phishing Protection</h2>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="security-accent mb-4">
+                                <p class="mb-0">Phishing attacks are among the most common cyber threats, attempting to trick you into revealing sensitive information or installing malware.</p>
+                            </div>
+                            
+                            <h3 class="h5 mb-3">How to Identify Phishing Attempts</h3>
+                            <ul class="mb-4">
+                                <li>Be suspicious of unexpected emails, messages, or calls asking for personal information</li>
+                                <li>Check for misspellings, grammatical errors, or unusual phrasing</li>
+                                <li>Hover over links to verify their actual destination before clicking</li>
+                                <li>Be wary of urgent requests creating pressure to act quickly</li>
+                                <li>Verify sender email addresses carefully for slight misspellings</li>
+                                <li>Be suspicious if the greeting is generic (e.g., "Dear Customer") rather than using your name</li>
+                            </ul>
+                            
+                            <h3 class="h5 mb-3">If You Suspect a Phishing Attempt</h3>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="card h-100 bg-body-tertiary">
+                                        <div class="card-body">
+                                            <h4 class="h6 mb-3">DO</h4>
+                                            <ul class="mb-0">
+                                                <li>Delete suspicious emails</li>
+                                                <li>Report phishing attempts to your IT department or service provider</li>
+                                                <li>Contact companies directly using their official website or phone number</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card h-100 bg-body-tertiary">
+                                        <div class="card-body">
+                                            <h4 class="h6 mb-3">DON'T</h4>
+                                            <ul class="mb-0">
+                                                <li>Click on suspicious links or open attachments</li>
+                                                <li>Provide personal, financial, or login information</li>
+                                                <li>Call phone numbers provided in suspicious messages</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Common Phishing Scenarios</h3>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Type</th>
+                                            <th scope="col">Description</th>
+                                            <th scope="col">Warning Signs</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Email Phishing</td>
+                                            <td>Fraudulent emails claiming to be from legitimate organizations</td>
+                                            <td>Mismatched URLs, generic greetings, urgency, spelling errors</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Spear Phishing</td>
+                                            <td>Targeted attacks using personal information</td>
+                                            <td>Unusually personal, yet something feels "off" about the request</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Smishing</td>
+                                            <td>SMS text message phishing</td>
+                                            <td>Unexpected texts with links, urgent requests for information</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vishing</td>
+                                            <td>Voice phishing via phone calls</td>
+                                            <td>Robotic voices, caller asking for sensitive information</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Device Security -->
+                <section id="devices" class="mb-5">
+                    <h2 class="mb-4">Device Security</h2>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h3 class="h5 mb-3">Computer Security</h3>
+                                    <ul class="mb-0">
+                                        <li>Keep your operating system and software updated</li>
+                                        <li>Use antivirus/anti-malware software and keep it updated</li>
+                                        <li>Enable firewall protection</li>
+                                        <li>Use disk encryption to protect sensitive data</li>
+                                        <li>Create regular backups of important data</li>
+                                        <li>Lock your computer when away from it</li>
+                                        <li>Use standard user accounts for daily tasks, not administrator accounts</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h3 class="h5 mb-3">Mobile Device Security</h3>
+                                    <ul class="mb-0">
+                                        <li>Set a strong PIN, password, or use biometric authentication</li>
+                                        <li>Enable remote tracking and wiping capabilities</li>
+                                        <li>Only download apps from official app stores</li>
+                                        <li>Review app permissions before installing</li>
+                                        <li>Keep your device updated with security patches</li>
+                                        <li>Use a VPN when connecting to public Wi-Fi</li>
+                                        <li>Disable Bluetooth and Wi-Fi when not in use</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Safe Browsing -->
+                <section id="browsing" class="mb-5">
+                    <h2 class="mb-4">Safe Browsing</h2>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Browsing Safety Tips</h3>
+                            <ul>
+                                <li>Verify website security by looking for HTTPS and the padlock icon</li>
+                                <li>Use private browsing when on public computers</li>
+                                <li>Clear browsing history and cookies regularly</li>
+                                <li>Be cautious when clicking on advertisements</li>
+                                <li>Keep your browser and extensions updated</li>
+                                <li>Use a VPN when accessing sensitive information on public networks</li>
+                                <li>Be wary of sites asking for excessive personal information</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Recommended Browser Extensions for Security</h3>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <i class="fas fa-shield-alt text-info me-3 mt-1"></i>
+                                        <div>
+                                            <h4 class="h6 mb-1">Ad Blockers</h4>
+                                            <p class="small mb-0">Block intrusive ads and potential malvertising (e.g., uBlock Origin)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <i class="fas fa-shield-alt text-info me-3 mt-1"></i>
+                                        <div>
+                                            <h4 class="h6 mb-1">HTTPS Everywhere</h4>
+                                            <p class="small mb-0">Enforces secure connections to websites when available</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <i class="fas fa-shield-alt text-info me-3 mt-1"></i>
+                                        <div>
+                                            <h4 class="h6 mb-1">Privacy Badger</h4>
+                                            <p class="small mb-0">Blocks invisible trackers and unwanted cookies</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <i class="fas fa-shield-alt text-info me-3 mt-1"></i>
+                                        <div>
+                                            <h4 class="h6 mb-1">NoScript</h4>
+                                            <p class="small mb-0">Blocks scripts from running on websites you visit</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Social Media Safety -->
+                <section id="social-media" class="mb-5">
+                    <h2 class="mb-4">Social Media Safety</h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="security-accent mb-4">
+                                <p class="mb-0">Social media platforms can expose your personal information to various risks if not used carefully.</p>
+                            </div>
+                            
+                            <h3 class="h5 mb-3">Best Practices for Social Media</h3>
+                            <ul>
+                                <li>Review and limit the personal information you share on social media</li>
+                                <li>Use strong, unique passwords for each social media account</li>
+                                <li>Enable two-factor authentication for all platforms that offer it</li>
+                                <li>Regularly review and update privacy settings</li>
+                                <li>Be selective about friend/connection requests</li>
+                                <li>Be careful about clicking links in messages, even from friends</li>
+                                <li>Avoid posting about your current location or travel plans</li>
+                                <li>Be mindful of the photos you share and what information they might reveal</li>
+                                <li>Regularly review apps and third-party services connected to your accounts</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Ransomware Prevention -->
+                <section id="ransomware" class="mb-5">
+                    <h2 class="mb-4">Ransomware Prevention</h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">What is Ransomware?</h3>
+                            <p>Ransomware is malicious software that encrypts your files and demands payment, usually in cryptocurrency, to restore access to your data.</p>
+                            
+                            <h3 class="h5 mb-3">Prevention Strategies</h3>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="card h-100 bg-body-tertiary">
+                                        <div class="card-body">
+                                            <h4 class="h6 mb-3">Data Protection</h4>
+                                            <ul class="mb-0">
+                                                <li>Maintain regular backups (3-2-1 rule: 3 copies, 2 different media types, 1 offsite)</li>
+                                                <li>Keep backups disconnected from your network</li>
+                                                <li>Test backup restoration procedures regularly</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card h-100 bg-body-tertiary">
+                                        <div class="card-body">
+                                            <h4 class="h6 mb-3">Infection Prevention</h4>
+                                            <ul class="mb-0">
+                                                <li>Keep systems and software updated</li>
+                                                <li>Use reputable antivirus and anti-malware software</li>
+                                                <li>Be cautious with email attachments and links</li>
+                                                <li>Disable macros in Microsoft Office documents</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <h3 class="h5 mt-4 mb-3">If You're Infected</h3>
+                            <ol>
+                                <li>Disconnect from the network immediately to prevent spread</li>
+                                <li>Report the incident to law enforcement</li>
+                                <li>Do not pay the ransom (payment doesn't guarantee recovery and funds criminal activities)</li>
+                                <li>Restore from clean backups after ensuring the infection is removed</li>
+                                <li>Consult with cybersecurity professionals for assistance</li>
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Identity Theft Protection -->
+                <section id="identity-theft" class="mb-5">
+                    <h2 class="mb-4">Identity Theft Protection</h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Safeguarding Your Identity</h3>
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <h4 class="h6 mb-3">Preventive Measures</h4>
+                                    <ul>
+                                        <li>Regularly monitor your credit reports from all major bureaus</li>
+                                        <li>Consider placing a credit freeze or fraud alert on your credit files</li>
+                                        <li>Shred documents containing personal information before disposal</li>
+                                        <li>Use secure, unique passwords for financial accounts</li>
+                                        <li>Be cautious about sharing personal information online</li>
+                                        <li>Regularly check bank and credit card statements for unauthorized transactions</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h4 class="h6 mb-3">Warning Signs of Identity Theft</h4>
+                                    <ul>
+                                        <li>Unexplained withdrawals or charges on your accounts</li>
+                                        <li>Failing to receive expected bills or mail</li>
+                                        <li>Receiving calls from debt collectors about debts you don't owe</li>
+                                        <li>Finding unfamiliar accounts or charges on your credit report</li>
+                                        <li>Receiving notification about a data breach involving your information</li>
+                                        <li>Being denied credit for no apparent reason</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="alert alert-info mt-4">
+                                <h4 class="h6">If You've Been a Victim:</h4>
+                                <ol class="mb-0">
+                                    <li>Place a fraud alert with the credit bureaus</li>
+                                    <li>Contact your financial institutions</li>
+                                    <li>Change passwords for all accounts</li>
+                                    <li>Report the theft to the Federal Trade Commission (FTC)</li>
+                                    <li>File a police report</li>
+                                    <li>Consider an extended credit freeze</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Children's Online Safety -->
+                <section id="children" class="mb-5">
+                    <h2 class="mb-4">Children's Online Safety</h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="security-accent mb-4">
+                                <p class="mb-0">Protecting children online requires a combination of technical controls, education, and open communication.</p>
+                            </div>
+                            
+                            <h3 class="h5 mb-3">Guidelines for Parents and Guardians</h3>
+                            <ul>
+                                <li>Use parental controls and content filtering on devices and home networks</li>
+                                <li>Keep computers and devices in common areas of the home</li>
+                                <li>Teach children about online privacy and the permanence of what they post</li>
+                                <li>Discuss the dangers of sharing personal information online</li>
+                                <li>Establish clear rules about acceptable online behavior and screen time</li>
+                                <li>Teach children to recognize online scams and suspicious behavior</li>
+                                <li>Monitor your child's online activities and friends</li>
+                                <li>Keep communication open so children feel comfortable discussing concerns</li>
+                                <li>Be aware of warning signs of cyberbullying or online exploitation</li>
+                                <li>Regularly review privacy settings on social media accounts and games</li>
+                            </ul>
+                            
+                            <div class="alert alert-secondary mt-4">
+                                <h4 class="h6 mb-3">Recommended Resources for Parents:</h4>
+                                <ul class="mb-0">
+                                    <li>Common Sense Media (for reviews of apps, games, websites)</li>
+                                    <li>National Center for Missing & Exploited Children's NetSmartz (education)</li>
+                                    <li>Internet Matters (age-specific guidance)</li>
+                                    <li>Family Online Safety Institute (tools and research)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-5 bg-info text-dark">
+    <div class="container text-center">
+        <h2 class="mb-4">Test Your Cybersecurity Knowledge</h2>
+        <p class="lead mb-4">Now that you've reviewed our best practices, take our interactive quiz to see how well you understand cybersecurity concepts.</p>
+        <a href="{{ url_for('quiz') }}" class="btn btn-dark btn-lg">Start Quiz Now</a>
+    </div>
+</section>
+{% endblock %}

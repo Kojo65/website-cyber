@@ -1,0 +1,242 @@
+{% extends 'base.html' %}
+
+{% block title %}Cybersecurity Resources - CyberGuard{% endblock %}
+
+{% block content %}
+<!-- Header Section -->
+<section class="py-5 bg-body-tertiary">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h1 class="mb-4">Cybersecurity Resources</h1>
+                <p class="lead">A curated collection of tools, guides, and resources to help you enhance your cybersecurity posture.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Resources Categories Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Tools Category -->
+            <div class="col-12 mb-5">
+                <h2 class="mb-4">Cybersecurity Tools</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 resource-card">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Password Managers</h3>
+                                <p class="card-text">Tools to securely store and generate strong, unique passwords.</p>
+                                <div class="mt-3">
+                                    <a href="https://bitwarden.com/" class="d-block mb-2" target="_blank" rel="noopener noreferrer">Bitwarden <i class="fas fa-external-link-alt fa-xs"></i></a>
+                                    <a href="https://www.lastpass.com/" class="d-block mb-2" target="_blank" rel="noopener noreferrer">LastPass <i class="fas fa-external-link-alt fa-xs"></i></a>
+                                    <a href="https://1password.com/" class="d-block" target="_blank" rel="noopener noreferrer">1Password <i class="fas fa-external-link-alt fa-xs"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card h-100 resource-card">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Antivirus & Security Suites</h3>
+                                <p class="card-text">Protection against malware, viruses, and other threats.</p>
+                                <div class="mt-3">
+                                    <a href="https://www.bitdefender.com/" class="d-block mb-2" target="_blank" rel="noopener noreferrer">Bitdefender <i class="fas fa-external-link-alt fa-xs"></i></a>
+                                    <a href="https://www.malwarebytes.com/" class="d-block mb-2" target="_blank" rel="noopener noreferrer">Malwarebytes <i class="fas fa-external-link-alt fa-xs"></i></a>
+                                    <a href="https://www.kaspersky.com/" class="d-block" target="_blank" rel="noopener noreferrer">Kaspersky <i class="fas fa-external-link-alt fa-xs"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card h-100 resource-card">
+                            <div class="card-body">
+                                <h3 class="card-title h5">VPN Services</h3>
+                                <p class="card-text">Virtual Private Networks to encrypt internet traffic and protect privacy.</p>
+                                <div class="mt-3">
+                                    <a href="https://protonvpn.com/" class="d-block mb-2" target="_blank" rel="noopener noreferrer">ProtonVPN <i class="fas fa-external-link-alt fa-xs"></i></a>
+                                    <a href="https://nordvpn.com/" class="d-block mb-2" target="_blank" rel="noopener noreferrer">NordVPN <i class="fas fa-external-link-alt fa-xs"></i></a>
+                                    <a href="https://www.expressvpn.com/" class="d-block" target="_blank" rel="noopener noreferrer">ExpressVPN <i class="fas fa-external-link-alt fa-xs"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Educational Resources -->
+            <div class="col-12 mb-5">
+                <h2 class="mb-4">Educational Resources</h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 resource-card">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Free Courses</h3>
+                                <p class="card-text">Learn cybersecurity fundamentals through free online courses.</p>
+                                <div class="mt-3">
+                                    <a href="https://www.coursera.org/learn/cybersecurity-roles-processes-operating-system-security" class="d-block mb-2" target="_blank" rel="noopener noreferrer">Coursera: Cybersecurity Fundamentals <i class="fas fa-external-link-alt fa-xs"></i></a>
+                                    <a href="https://www.edx.org/learn/cybersecurity" class="d-block mb-2" target="_blank" rel="noopener noreferrer">edX: Cybersecurity Courses <i class="fas fa-external-link-alt fa-xs"></i></a>
+                                    <a href="https://www.futurelearn.com/subjects/it-and-computer-science-courses/cyber-security" class="d-block" target="_blank" rel="noopener noreferrer">FutureLearn: Cyber Security <i class="fas fa-external-link-alt fa-xs"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 resource-card">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Government Resources</h3>
+                                <p class="card-text">Official cybersecurity guidance from government agencies.</p>
+                                <div class="mt-3">
+                                    <a href="https://www.cisa.gov/cybersecurity" class="d-block mb-2" target="_blank" rel="noopener noreferrer">CISA Cybersecurity Resources <i class="fas fa-external-link-alt fa-xs"></i></a>
+                                    <a href="https://www.ncsc.gov.uk/section/advice-guidance/all-topics" class="d-block mb-2" target="_blank" rel="noopener noreferrer">UK NCSC Guidance <i class="fas fa-external-link-alt fa-xs"></i></a>
+                                    <a href="https://www.cyber.gov.au/acsc/view-all-content/advice" class="d-block" target="_blank" rel="noopener noreferrer">Australian Cyber Security Centre <i class="fas fa-external-link-alt fa-xs"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 resource-card">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Security Blogs</h3>
+                                <p class="card-text">Stay informed with the latest cybersecurity news and insights.</p>
+                                <div class="mt-3">
+                                    <a href="https://krebsonsecurity.com/" class="d-block mb-2" target="_blank" rel="noopener noreferrer">Krebs on Security <i class="fas fa-external-link-alt fa-xs"></i></a>
+                                    <a href="https://www.schneier.com/" class="d-block mb-2" target="_blank" rel="noopener noreferrer">Schneier on Security <i class="fas fa-external-link-alt fa-xs"></i></a>
+                                    <a href="https://www.darkreading.com/" class="d-block" target="_blank" rel="noopener noreferrer">Dark Reading <i class="fas fa-external-link-alt fa-xs"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Security Awareness -->
+            <div class="col-12 mb-5">
+                <h2 class="mb-4">Security Awareness Materials</h2>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100 resource-card">
+                            <div class="card-body">
+                                <h3 class="card-title h5">For Individuals</h3>
+                                <p class="card-text">Resources to help individuals improve their cybersecurity awareness.</p>
+                                <div class="mt-3">
+                                    <a href="https://www.stopthinkconnect.org/" class="d-block mb-2" target="_blank" rel="noopener noreferrer">Stop Think Connect <i class="fas fa-external-link-alt fa-xs"></i></a>
+                                    <a href="https://staysafeonline.org/" class="d-block mb-2" target="_blank" rel="noopener noreferrer">Stay Safe Online <i class="fas fa-external-link-alt fa-xs"></i></a>
+                                    <a href="https://haveibeenpwned.com/" class="d-block" target="_blank" rel="noopener noreferrer">Have I Been Pwned <i class="fas fa-external-link-alt fa-xs"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card h-100 resource-card">
+                            <div class="card-body">
+                                <h3 class="card-title h5">For Organizations</h3>
+                                <p class="card-text">Resources for organizations to build security awareness programs.</p>
+                                <div class="mt-3">
+                                    <a href="https://www.sans.org/security-awareness-training/" class="d-block mb-2" target="_blank" rel="noopener noreferrer">SANS Security Awareness <i class="fas fa-external-link-alt fa-xs"></i></a>
+                                    <a href="https://www.ncsc.gov.uk/section/information-for/small-medium-sized-organisations" class="d-block mb-2" target="_blank" rel="noopener noreferrer">NCSC for Small Organizations <i class="fas fa-external-link-alt fa-xs"></i></a>
+                                    <a href="https://www.ftc.gov/business-guidance/small-businesses/cybersecurity" class="d-block" target="_blank" rel="noopener noreferrer">FTC Cybersecurity for Small Business <i class="fas fa-external-link-alt fa-xs"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Privacy Tools -->
+            <div class="col-12 mb-5">
+                <h2 class="mb-4">Privacy Protection Tools</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 resource-card">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Browser Extensions</h3>
+                                <p class="card-text">Enhance your browser's privacy and security.</p>
+                                <div class="mt-3">
+                                    <a href="https://privacybadger.org/" class="d-block mb-2" target="_blank" rel="noopener noreferrer">Privacy Badger <i class="fas fa-external-link-alt fa-xs"></i></a>
+                                    <a href="https://www.eff.org/https-everywhere" class="d-block mb-2" target="_blank" rel="noopener noreferrer">HTTPS Everywhere <i class="fas fa-external-link-alt fa-xs"></i></a>
+                                    <a href="https://ublock.org/" class="d-block" target="_blank" rel="noopener noreferrer">uBlock Origin <i class="fas fa-external-link-alt fa-xs"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card h-100 resource-card">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Secure Communication</h3>
+                                <p class="card-text">Tools for private and encrypted communications.</p>
+                                <div class="mt-3">
+                                    <a href="https://signal.org/" class="d-block mb-2" target="_blank" rel="noopener noreferrer">Signal <i class="fas fa-external-link-alt fa-xs"></i></a>
+                                    <a href="https://protonmail.com/" class="d-block mb-2" target="_blank" rel="noopener noreferrer">ProtonMail <i class="fas fa-external-link-alt fa-xs"></i></a>
+                                    <a href="https://tutanota.com/" class="d-block" target="_blank" rel="noopener noreferrer">Tutanota <i class="fas fa-external-link-alt fa-xs"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card h-100 resource-card">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Privacy Browsers</h3>
+                                <p class="card-text">Web browsers designed with privacy as a priority.</p>
+                                <div class="mt-3">
+                                    <a href="https://www.torproject.org/" class="d-block mb-2" target="_blank" rel="noopener noreferrer">Tor Browser <i class="fas fa-external-link-alt fa-xs"></i></a>
+                                    <a href="https://brave.com/" class="d-block mb-2" target="_blank" rel="noopener noreferrer">Brave Browser <i class="fas fa-external-link-alt fa-xs"></i></a>
+                                    <a href="https://www.mozilla.org/en-US/firefox/new/" class="d-block" target="_blank" rel="noopener noreferrer">Firefox (with privacy settings) <i class="fas fa-external-link-alt fa-xs"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Incident Response -->
+            <div class="col-12">
+                <h2 class="mb-4">Incident Response Resources</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="security-accent mb-4">
+                            <p class="mb-0">If you've experienced a cybersecurity incident, these resources can help you respond effectively.</p>
+                        </div>
+                        
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <h3 class="h5 mb-3">For Individuals</h3>
+                                <ul>
+                                    <li><a href="https://www.identitytheft.gov/" target="_blank" rel="noopener noreferrer">IdentityTheft.gov <i class="fas fa-external-link-alt fa-xs"></i></a> - Report and recover from identity theft</li>
+                                    <li><a href="https://www.consumer.ftc.gov/features/feature-0014-identity-theft" target="_blank" rel="noopener noreferrer">FTC Identity Theft Resources <i class="fas fa-external-link-alt fa-xs"></i></a></li>
+                                    <li><a href="https://www.ic3.gov/" target="_blank" rel="noopener noreferrer">FBI's Internet Crime Complaint Center <i class="fas fa-external-link-alt fa-xs"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="h5 mb-3">For Organizations</h3>
+                                <ul>
+                                    <li><a href="https://www.cisa.gov/reporting-cyber-incidents" target="_blank" rel="noopener noreferrer">CISA: Reporting Cyber Incidents <i class="fas fa-external-link-alt fa-xs"></i></a></li>
+                                    <li><a href="https://www.sans.org/score/incident-forms/" target="_blank" rel="noopener noreferrer">SANS Incident Response Forms <i class="fas fa-external-link-alt fa-xs"></i></a></li>
+                                    <li><a href="https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final" target="_blank" rel="noopener noreferrer">NIST Computer Security Incident Handling Guide <i class="fas fa-external-link-alt fa-xs"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-5 bg-info text-dark">
+    <div class="container text-center">
+        <h2 class="mb-4">Want to Test Your Knowledge?</h2>
+        <p class="lead mb-4">Now that you've explored our resources, take our interactive quiz to see how well you understand cybersecurity concepts.</p>
+        <a href="{{ url_for('quiz') }}" class="btn btn-dark btn-lg">Start Quiz Now</a>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,112 @@
+[
+  {
+    "question": "What is phishing?",
+    "options": [
+      "A fishing technique used by cybersecurity professionals",
+      "A method to recover lost passwords",
+      "A fraudulent attempt to obtain sensitive information by disguising as a trustworthy entity",
+      "A software tool used to protect your computer"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Phishing is a cybercrime where attackers disguise themselves as trustworthy entities to trick users into providing sensitive data such as login credentials, credit card numbers, or personal information."
+  },
+  {
+    "question": "Which of the following is the best password practice?",
+    "options": [
+      "Using the same password for all accounts so you can remember it",
+      "Writing your passwords on sticky notes attached to your monitor",
+      "Using simple passwords like '123456' or 'password'",
+      "Using unique, complex passwords and a password manager"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Using unique and complex passwords for each account, combined with a password manager to keep track of them, is the recommended practice to prevent unauthorized access to your accounts."
+  },
+  {
+    "question": "What is two-factor authentication (2FA)?",
+    "options": [
+      "A method that requires two passwords for logging in",
+      "A method that requires something you know (password) and something you have (like a phone) to log in",
+      "A technique to create secure passwords",
+      "A virus scanning technique that checks files twice"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Two-factor authentication (2FA) is a security process that requires users to provide two different authentication factors to verify their identity, typically something they know (password) and something they have (like a mobile device)."
+  },
+  {
+    "question": "What is a VPN used for?",
+    "options": [
+      "To make your internet connection faster",
+      "To encrypt your internet traffic and hide your IP address",
+      "To remove viruses from your computer",
+      "To store your passwords securely"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A Virtual Private Network (VPN) encrypts your internet traffic and masks your IP address, helping to protect your privacy online and secure your data when using public Wi-Fi networks."
+  },
+  {
+    "question": "What is ransomware?",
+    "options": [
+      "Software that helps recover lost data",
+      "Malware that locks your files and demands payment to unlock them",
+      "A tool to monitor network traffic",
+      "A type of antivirus software"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ransomware is a type of malicious software that encrypts a victim's files and demands a ransom payment to restore access to the data."
+  },
+  {
+    "question": "Why should you keep your software updated?",
+    "options": [
+      "To get new features only",
+      "To keep the software company in business",
+      "To patch security vulnerabilities",
+      "Updates don't matter for security"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Software updates often include patches for security vulnerabilities that have been discovered. Keeping your software updated helps protect your system from known security threats."
+  },
+  {
+    "question": "What is social engineering in cybersecurity?",
+    "options": [
+      "Programming computers to be more social",
+      "Building social networks securely",
+      "Manipulating people into breaking security procedures or divulging confidential information",
+      "Creating software for social media platforms"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Social engineering is the psychological manipulation of people into performing actions or divulging confidential information. It's a non-technical strategy that relies on human interaction and often involves tricking people to break normal security procedures."
+  },
+  {
+    "question": "What is a firewall?",
+    "options": [
+      "A physical wall that prevents fire from spreading in data centers",
+      "A security system that monitors and controls incoming and outgoing network traffic",
+      "A type of antivirus software",
+      "A tool to speed up internet connection"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A firewall is a network security device or software that monitors and filters incoming and outgoing network traffic based on predetermined security rules, acting as a barrier between a trusted network and untrusted networks."
+  },
+  {
+    "question": "What does 'HTTPS' in a website URL indicate?",
+    "options": [
+      "The website is hosted on a high-speed server",
+      "The website has premium content",
+      "The connection to the website is encrypted and secure",
+      "The website is owned by a government entity"
+    ],
+    "correctAnswer": 2,
+    "explanation": "HTTPS (Hypertext Transfer Protocol Secure) indicates that communications between your browser and the website are encrypted, helping to ensure that data transferred remains private and integral."
+  },
+  {
+    "question": "What is the best way to protect against malware?",
+    "options": [
+      "Only use your computer offline",
+      "Use antivirus software, keep software updated, and be cautious about downloads",
+      "Never use public Wi-Fi",
+      "Change your password frequently"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A comprehensive approach to malware protection includes using reputable antivirus software, keeping all software (including the operating system) updated, and being cautious about what you download or click on."
+  }
+]

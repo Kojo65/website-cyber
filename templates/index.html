@@ -1,0 +1,230 @@
+{% extends 'base.html' %}
+
+{% block title %}CyberGuard - Cybersecurity Awareness{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section text-center">
+    <div class="container">
+        <h1 class="display-4 fw-bold mb-4">Protect Your Digital Life</h1>
+        <p class="lead mb-5">Learn essential cybersecurity skills and best practices to stay safe online.</p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="{{ url_for('quiz') }}" class="btn btn-info btn-lg">Test Your Knowledge</a>
+            <a href="{{ url_for('best_practices') }}" class="btn btn-outline-light btn-lg">View Best Practices</a>
+        </div>
+    </div>
+</section>
+
+<!-- Key Threats Section -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Common Cyber Threats You Should Know</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 cybersec-card">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-4">
+                            <i class="fas fa-fish text-info fa-3x"></i>
+                        </div>
+                        <h3 class="card-title h5">Phishing Attacks</h3>
+                        <p class="card-text">Fraudulent attempts to obtain sensitive information by disguising as a trustworthy entity through emails, messages, or fake websites.</p>
+                        <a href="{{ url_for('best_practices') }}#phishing" class="btn btn-sm btn-outline-secondary mt-3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card h-100 cybersec-card">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-4">
+                            <i class="fas fa-lock text-info fa-3x"></i>
+                        </div>
+                        <h3 class="card-title h5">Ransomware</h3>
+                        <p class="card-text">Malicious software that encrypts your files and demands payment to restore access, often spreading through phishing emails or security vulnerabilities.</p>
+                        <a href="{{ url_for('best_practices') }}#ransomware" class="btn btn-sm btn-outline-secondary mt-3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card h-100 cybersec-card">
+                    <div class="card-body text-center p-4">
+                        <div class="mb-4">
+                            <i class="fas fa-user-secret text-info fa-3x"></i>
+                        </div>
+                        <h3 class="card-title h5">Identity Theft</h3>
+                        <p class="card-text">The fraudulent acquisition and use of a person's private identifying information, usually for financial gain or to gain access to personal accounts.</p>
+                        <a href="{{ url_for('best_practices') }}#identity-theft" class="btn btn-sm btn-outline-secondary mt-3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Cybersecurity Matters -->
+<section class="py-5 bg-body-tertiary">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <h2 class="mb-4">Why Cybersecurity Awareness Matters</h2>
+                <div class="security-accent mb-4">
+                    <p class="lead">In today's digital world, cybersecurity is not just for IT professionals—it's for everyone.</p>
+                </div>
+                <p>Cyber threats are evolving rapidly, and awareness is your first line of defense. When you understand the risks and know how to respond, you significantly reduce your chances of becoming a victim.</p>
+                <p>Whether you're protecting personal data or company information, the cybersecurity habits you develop can make all the difference.</p>
+                <a href="{{ url_for('resources') }}" class="btn btn-info mt-3">Explore Resources</a>
+            </div>
+            <div class="col-lg-6">
+                <div class="row g-4">
+                    <div class="col-6">
+                        <div class="counter-item p-4 rounded bg-dark">
+                            <div class="counter-number" data-target="300">0</div>
+                            <p class="mb-0">Million phishing emails sent daily</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="counter-item p-4 rounded bg-dark">
+                            <div class="counter-number" data-target="11">0</div>
+                            <p class="mb-0">Seconds until a new cyber attack</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="counter-item p-4 rounded bg-dark">
+                            <div class="counter-number" data-target="95">0</div>
+                            <p class="mb-0">Percent of breaches due to human error</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="counter-item p-4 rounded bg-dark">
+                            <div class="counter-number" data-target="4">0</div>
+                            <p class="mb-0">Million USD average cost of a data breach</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Key Security Practices -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Essential Security Practices</h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 cybersec-card">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-key text-info me-3 fa-2x"></i>
+                            <h3 class="card-title h5 mb-0">Strong Passwords</h3>
+                        </div>
+                        <p class="card-text">Use unique, complex passwords for each account and consider a password manager to keep track of them securely.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 cybersec-card">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-shield-alt text-info me-3 fa-2x"></i>
+                            <h3 class="card-title h5 mb-0">Two-Factor Auth</h3>
+                        </div>
+                        <p class="card-text">Enable two-factor authentication whenever possible to add an extra layer of security beyond just passwords.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 cybersec-card">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-sync text-info me-3 fa-2x"></i>
+                            <h3 class="card-title h5 mb-0">Regular Updates</h3>
+                        </div>
+                        <p class="card-text">Keep your devices, software, and apps updated with the latest security patches and improvements.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 cybersec-card">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-brain text-info me-3 fa-2x"></i>
+                            <h3 class="card-title h5 mb-0">Stay Vigilant</h3>
+                        </div>
+                        <p class="card-text">Be cautious about clicking links, opening attachments, or providing personal information, especially from unknown sources.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+            <a href="{{ url_for('best_practices') }}" class="btn btn-outline-secondary">View All Best Practices</a>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-5 bg-info text-dark">
+    <div class="container text-center">
+        <h2 class="mb-4">Test Your Cybersecurity Knowledge</h2>
+        <p class="lead mb-4">Take our interactive quiz to see how well you can identify and respond to common cyber threats.</p>
+        <a href="{{ url_for('quiz') }}" class="btn btn-dark btn-lg">Start Quiz Now</a>
+    </div>
+</section>
+
+<!-- Recent News Preview -->
+<section class="py-5">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="mb-0">Recent Cybersecurity News</h2>
+            <a href="{{ url_for('news') }}" class="btn btn-outline-secondary">View All</a>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 cybersec-card">
+                    <div class="card-body">
+                        <span class="badge bg-info mb-2">Ransomware</span>
+                        <h3 class="card-title h5">Critical Infrastructure Increasingly Targeted by Ransomware</h3>
+                        <p class="card-text">Recent reports show a 300% increase in ransomware attacks targeting critical infrastructure sectors like energy and healthcare.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-body-secondary">June 15, 2023</small>
+                            <a href="{{ url_for('news') }}" class="btn btn-sm btn-outline-secondary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card h-100 cybersec-card">
+                    <div class="card-body">
+                        <span class="badge bg-info mb-2">Data Privacy</span>
+                        <h3 class="card-title h5">New Data Protection Regulations Coming in 2023</h3>
+                        <p class="card-text">Several countries are implementing stricter data protection laws, giving users more control over their personal information.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-body-secondary">June 10, 2023</small>
+                            <a href="{{ url_for('news') }}" class="btn btn-sm btn-outline-secondary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card h-100 cybersec-card">
+                    <div class="card-body">
+                        <span class="badge bg-info mb-2">Mobile Security</span>
+                        <h3 class="card-title h5">Researchers Discover Vulnerability in Popular Mobile Apps</h3>
+                        <p class="card-text">Security researchers have found a critical vulnerability affecting multiple popular mobile applications. Updates are being rolled out.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-body-secondary">June 5, 2023</small>
+                            <a href="{{ url_for('news') }}" class="btn btn-sm btn-outline-secondary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
